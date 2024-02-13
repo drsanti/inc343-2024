@@ -8,20 +8,28 @@
 3) Docker
 4) VSCode
 
-### Create a TypeScript based Express Project
+### Node.js based on TypeScript
 >Check the `node-typescript-template` as reference
-1) Create a project directory
+1 Create/clone/download the template project
 2) Install dependencies
-3) Create configuration files
-4) Create index.ts file and other source files
-5) Edit the `package.json` file
-6) Run the application
-7) Learn TypeScript
+3) Run the application
+4) Learn `TypeScript`
 
----
+### React+Tailwind
+>Check the `react-tailwind-template` as reference
+1) Create/clone/download the template project
+2) Install dependencies
+3) Run the application
+4) Learn `React` and `Tailwind`
 
-## Basics Docker
-
-### Dockerfile
+### Run OPC-UA Server in Docker
+1) Run the `Docker daemon` or `Docker desktop`
+2) Open a terminal and run the command:
+```
+docker run --name opc-ua-server -p 9090:9090 drsanti/opc-ua-server
+```
+3) Open/Run the `uaExpert` and add the server
+4) Check the results
+5) Learn OPC-UA
 
 ### Docker Compose

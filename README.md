@@ -35,7 +35,7 @@
 
 2) Open a terminal and run the command:
 ```
-docker run --name opc-ua-server -p 9090:9090 drsanti/opc-ua-server
+docker run --name opc-ua-server -p 9999:9999 drsanti/opc-ua-server
 ```
 3) Open/Run the `uaExpert` and add the server
 

@@ -9,7 +9,7 @@ docker run --name QNetLinksOpcServer -p 9999:9999 -p 9990:9990 drsanti/opc-ua-se
 
 ```
 http://localhost:9990/opc/api/v1/system/datetime
-http://localhost:9990/opc/api/v1/system/datetime/d
+http://localhost:9990/opc/api/v1/system/datetime/data
 http://localhost:9990/opc/api/v1/system/datetime/data/value
 http://localhost:9990/opc/api/v1/system/datetime/data/value/zone
 http://localhost:9990/opc/api/v1/system/datetime/data/value/local
@@ -38,19 +38,18 @@ Create a directory, `cd` to the directory, and run the following commands
 
 ```
 npx create-react-app . --template typescript
-cd ./app
 npm install -D tailwindcss
 npx tailwindcss init
 ```
 
 
 ### Modify the `tailwind.config.js:`
-Replace the `content:[]` with the following line
+Replace the `content:[],` with the following line
 
 `content: ["./src/**/*.{js,jsx,ts,tsx,html,css}"],`
 
 ### Modify the `index.css`
-Add these three lines in the `index.css`
+Add these three lines in the `src/index.css`
 ```
 @tailwind base;
 @tailwind components;

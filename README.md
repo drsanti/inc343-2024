@@ -35,8 +35,10 @@
 
 2) Open a terminal and run the command:
 ```
-docker run --name opc-ua-server -p 9999:9999 drsanti/opc-ua-server
+docker run --name opc-ua-server -p 9999:9999 -p 9990:9990 drsanti/opc-ua-server
 ```
+Port `9999` is mapped to the `OPC-UA Server` and port `9990` is mapped to `RESTful API`.
+
 3) Open/Run the `uaExpert` and add the server
 
 4) Check the results

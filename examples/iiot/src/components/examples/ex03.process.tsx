@@ -25,7 +25,7 @@ export const Ex03Process = () => {
       /** Start the machine and its id */
       const id = await machine.start();
 
-      /** Subscribe to the `id-analog` topic */
+      /** Subscribe to the `id-/sensors/analog` topic */
       qnet
         .getSubPub()
         .subscribe(`${id}/sensors/analog`, (message: QNetWebSocketMessage) => {
@@ -33,7 +33,7 @@ export const Ex03Process = () => {
           processAnalog(message);
         });
 
-      /** Subscribe to the `id-digital` topic */
+      /** Subscribe to the `id/sensors/digital` topic */
       qnet
         .getSubPub()
         .subscribe(`${id}/sensors/digital`, (message: QNetWebSocketMessage) => {
@@ -57,7 +57,7 @@ export const Ex03Process = () => {
     try {
       /** Unpack the message */
       const analogData: AnalogData = JSON.parse(message.content);
-      console.log(analogData);
+      console.table(analogData);
     } catch (e: any) {
       console.error(e.toMessage());
     }

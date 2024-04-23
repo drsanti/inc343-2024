@@ -1,7 +1,5 @@
 "use client";
-
-import { Ex06Actuators } from "@/components/examples/ex06.actuators";
-
+import { Ex04SetState } from "@/components/examples/ex04.setstate";
 export default function Home() {
-  return <Ex06Actuators />;
+  return <Ex04SetState />;
 }

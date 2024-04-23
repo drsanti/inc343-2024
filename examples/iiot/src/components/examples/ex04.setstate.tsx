@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 
 export const Ex04SetState = () => {
   /** Connection status state */
-  const [connectionInfo, setConnectionInfo] = useState<string>("unknown");
+  const [connectionInfo, setConnectionInfo] = useState<string>("Connecting...");
 
   /** Analog data state */
   const [analogData, setAnalogData] = useState<AnalogData>();
@@ -98,11 +98,12 @@ export const Ex04SetState = () => {
 
   // Display data (simple text)
   return (
-    <div>
-      <p>{connectionInfo}</p>
-      <p>{analogData?.data.values.toString()}</p>
-      <hr />
-      <p>{digitalData?.data.values.toString()}</p>
+    <div className="w-full h-4 bg-gray-200">
+      <div>{analogData?.data.values[0]}</div>
+      <div
+        className="h-full bg-blue-500"
+        style={{ width: `${analogData?.data.values[0]}%` }}
+      ></div>
     </div>
   );
 };

@@ -1,3 +1,39 @@
+
+## 23 April 2024: 
+### Basic JavaScript
+ - 10 Marks
+ - 15 Questions (LEB2)
+
+---
+
+## 30 April 2024: 
+### React Applications
+ - 20 Marks
+ - 10 Questions (LEB2, 10 Marks)
+ - 5 Coding (10 Marks)
+
+---
+
+## 7 May 2024: 
+### React + Tailwind Applications
+ - 30 Marks
+ - 10 Questions (LEB2, 10 Marks)
+ - 5 Coding (20 Marks)
+
+---
+
+
+
+
+
+## 14 April 2024: 
+### IoT Applications
+ - 40 Marks
+ - 5 Questions
+
+---
+
+
 # Welcome to INC343-2024
 
 ## Getting Started
@@ -46,6 +82,5 @@ Port `9999` is mapped to the `OPC-UA Server` and port `9990` is mapped to `RESTf
 5) Learn OPC-UA
 
 ### Docker Compose
-
 
 ---

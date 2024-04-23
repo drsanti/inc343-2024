@@ -22,14 +22,11 @@
 
 ---
 
-
-
-
-
 ## 14 April 2024: 
 ### IoT Applications
  - 40 Marks
- - 5 Questions
+ - 10 Questions (LEB2, 10 Marks)
+ - 5 Coding (30 Mark)
 
 ---
 
